@@ -1,0 +1,55 @@
+html
+  head
+    title Wings
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no')
+    meta(name="viewport" content="width=device-width")
+    link(rel='icon', type='image/png', href='./imgs/wings80.png')
+    link(href='http://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css')
+    link(rel='stylesheet' type='text/css' href="style.css")
+    // Kik 
+    link(rel='kik-icon', href='./imgs/wings80.png')
+  body
+    canvas#game(width='365px', height='565px')
+    #loading
+      .inner
+        .controls(align="center")
+          p Waiting for a player to join...
+
+    #win
+      .inner
+        .controls(align="center")
+          p You won!
+          button.reset Back
+    #lose
+      .inner
+        .controls(align="center")
+          p You lost.
+          button.reset Back
+
+    #credits
+      .inner
+        .controls(align="center")
+          p Wings is a clone of 
+            a(href="http://twitter.com/dongatory" target="_blank")= "@dongatory"
+            span 's Flappy Bird app with multiplayer ability
+          p By 
+            a(href="http://twitter.com/codingbean" target="_blank")= "@codingbean"
+          button#closecredits Back
+    #container
+      .inner
+        .controls(align="center")
+          img(src="./imgs/wings_opponent32.png")
+          br
+          br
+          br
+          button#joingame Join Game
+          br
+          button#showcredits Credits
+          br
+          button.blue(onclick="window.location='https://twitter.com/intent/tweet?text=Play%20Flappy%20Bird%20with%20friends%20on%20http%3A%2F%2Fwings.codingbean.org%20by%20%40wingsmmo'") Share
+  // jQuery 
+  script(src='//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js')
+  // custom 
+  script(src='./js/wings.js')
+  script(src="/socket.io/socket.io.js")

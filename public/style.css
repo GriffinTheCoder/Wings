@@ -1,0 +1,85 @@
+body {
+	margin: 0;
+	padding: 0;
+	line-height: 20px;
+	background-color: black;
+}
+
+canvas {
+	margin: auto;
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+}
+
+button {
+	font-family: 'Press Start 2P', cursive;
+	font-size: 10px;
+	padding: 20px;
+	margin-bottom: 8px;
+	width: 40%;
+	border-width: 0px;
+	background-color: #FF634A;
+	color: white;
+}
+
+.blue {
+	background-color: #5D82D8 !important;
+}
+
+a {
+	text-decoration: none;
+	color: #5D82D8;
+}
+
+#loading, #lose, #win {
+	overflow: auto;
+	top: 0px;
+	left: 0px;
+	width: 365px;
+	height: 565px;
+	background-color: rgba(255, 255, 255, 0.5);
+	display: none;
+	margin: auto;
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+}
+
+#credits {
+	overflow: auto;
+	top: 0px;
+	left: 0px;
+	width: 365px;
+	height: 565px;
+	background-color: rgba(255, 255, 255, 0.5);
+	display: none;
+	margin: auto;
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+}
+
+#container {
+	overflow: auto;
+	top: 0px;
+	left: 0px;
+	width: 365px;
+	height: 565px;
+	background-color: rgba(255, 255, 255, 0.5);
+	margin: auto;
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.inner {
+	display: table;
+	height: 100%;
+	width: 100%;
+}
+
+.controls {
+	display: table-cell;
+	vertical-align: middle;
+	width: 100%;
+	height: 100%;
+	font-family: 'Press Start 2P', cursive;
+	color: black;
+}

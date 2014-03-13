@@ -1,0 +1,11 @@
+{
+    "name": "Wings",
+    "version": "0.0.1",
+    "description": "Fly with friends.",
+    "dependencies": {
+        "socket.io": "latest",
+        "express": "latest",
+        "jade": "latest"
+    },
+    "author": "Codingbean"
+}
