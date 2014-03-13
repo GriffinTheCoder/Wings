@@ -1,7 +1,7 @@
 /** 
  * Socket.IO config
  */
-var socketURI = "192.168.1.148";
+var socketURI = "localhost";
 
 /**
  * Canvas
